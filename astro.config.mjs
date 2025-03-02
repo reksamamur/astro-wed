@@ -8,6 +8,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  base: '/',
+  site: 'reksaperson.my.id',
   // adapter: nodejs({
   //   mode: "standalone",
   // }),
