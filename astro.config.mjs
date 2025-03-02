@@ -9,9 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   base: '/',
-  site: 'reksaperson.my.id',
-  // adapter: nodejs({
-  //   mode: "standalone",
-  // }),
-  // output: "server",
+  site: 'https://reksaperson.my.id',
 });
