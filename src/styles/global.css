@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@theme {
+    --font-display: "Noto Serif", "sans-serif";
+    --font-pinyon: 'Pinyon Script', "sans-serif";
+    --font-parisienne: "Parisienne", "sans-serif";
+}

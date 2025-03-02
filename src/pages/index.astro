@@ -1,0 +1,282 @@
+---
+import Layout from "../layouts/Layout.astro";
+import map from "../assets/map.jpg";
+import rings from "../assets/rings.png";
+---
+
+<Layout title={`Undangan Untuk `}>
+  <div class="relative min-h-screen w-full">
+    <div
+      class="absolute inset-0 z-0 bg-gradient-to-b from-[#548CB3] to-[#8DC8E7]"
+    >
+    </div>
+
+    <div class="absolute z-10 inset-0 overflow-hidden">
+      <div class="cloud-1"></div>
+      <div class="cloud-2"></div>
+      <div class="cloud-3"></div>
+    </div>
+
+    <div class="relative z-50 px-4 md:px-20 py-14 md:py-40 space-y-10">
+      <div
+        class="container mx-auto px-4 md:px-10 pt-40 pb-20 max-w-4xl space-y-14 border-[20px] xl:border-[40px] border-white/20"
+      >
+        <div class="text-center text-white space-y-10 w-full">
+          <h1 class="text-8xl font-parisienne font-bold">Reksa & Resti</h1>
+        </div>
+
+        <div class="text-center space-y-2 text-white">
+          <h3 class="text-lg font-normal">Dilaksanakan</h3>
+          <h2 class="text-2xl font-semibold">Sabtu, 12 April 2025</h2>
+
+          <div class="space-y-1">
+            <p class="text-base font-normal">Akad: 09:00 - 11:00</p>
+            <p class="text-base font-normal">Resepsi: 11:00 - 14:00</p>
+          </div>
+
+          <button
+            class="rounded-full cursor-pointer transition-all ease-in-out duration-300 hover:scale-125 text-black font-medium text-sm border-2 border-[#CBCBCB]/20 px-4 py-3 shadow-xl bg-gradient-to-b from-white to-[#EAEAEA]"
+          >
+            Simpan di Kalender
+          </button>
+        </div>
+
+        <div class="text-center space-y-6 text-white">
+          <h4 class="text-xl font-medium">Bismillahirrahmaanirrahiim</h4>
+          <p class="text-base font-normal">
+            Maha Suci Allah Subhanahu Wa Ta’ala yang telah menciptakan
+            makhluk-Nya berpasang-pasangan. Dengan memohon Rahmat dan Ridho
+            Allah Subahanahu Wa Ta’ala, Kami bermaksud mengundang
+            Bapak/Ibu/Saudara/i dalam acara Pernikahan Kami.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-10 items-center justify-center">
+          <div class="h-fit w-fit">
+            <img src={rings.src} class="h-full w-full" alt="A rings." />
+          </div>
+          <div
+            class="grid grid-cols-1 md:gap-4 gap-y-10 auto-rows-fr md:grid-cols-2"
+          >
+            <div class="text-center text-white space-y-3">
+              <h3 class="text-2xl font-semibold">Reksa Sarmedi Ma’mur</h3>
+              <p class="text-sm font-normal">
+                <span>Putra dari Alm Bpk. Sarmedi Ma’mur</span>
+                <br />
+                <span>& Ibu Santi Sri Mulyati</span>
+              </p>
+            </div>
+            <div class="text-center text-white space-y-2">
+              <h3 class="text-2xl font-semibold">Resti Meidiyani Dimyati</h3>
+              <p class="text-sm font-normal">
+                <span>Putri dari Alm Bpk. Didin Dimyati</span>
+                <br />
+                <span>& Ibu Lilis Setiawati</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="https://maps.app.goo.gl/s4NFsbRVH1bXY3Lv7" target="_blank">
+            <div
+              style={{ backgroundImage: `url(${map.src})` }}
+              class="bg-blend-multiply relative w-full flex justify-center items-center cursor-pointer isolate hover:scale-105 transition-all duration-300 bg-[length:300%_250%] md:bg-[length:300%_400%] bg-[position:45%_45%] md:bg-[position:40%_59%] border-4 border-[#EAEAEA] rounded-3xl bg-clip-border shadow-xl h-64 bg-no-repeat"
+            >
+              <div
+                class="rounded-2xl transition-all gap-10 duration-300 backdrop-blur-sm hover:backdrop-blur-none bg-gradient-to-r from-white from-20% to-white/20 to-50% flex flex-col h-full w-full px-6 py-12 md:px-8 md:py-10 justify-between group"
+              >
+                <div class="flex-1 space-y-2">
+                  <span
+                    class="text-xl group-hover:underline group-hover:text-[#103CC4]"
+                  >
+                    Lokasi
+                  </span>
+                  <h4
+                    class="text-4xl font-bold group-hover:underline group-hover:text-[#103CC4]"
+                  >
+                    Taman Kopi Serang
+                  </h4>
+                </div>
+
+                <span class="group-hover:underline group-hover:text-[#103CC4]">
+                  Lihat map
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-white space-y-6 text-center">
+          <h1 class="font-parisienne text-4xl">Wedding Gift</h1>
+          <p>
+            Do'a restu anda merupakan karunia yang sangat berarti bagi kami. Dan
+            jika memberi adalah bentuk kasih, kini dapat mengirimkannya dari
+            mana saja. Terimakasih
+          </p>
+
+          <a
+            href="/gift"
+            class="transition-all ease-in-out duration-300 hover:scale-125 cursor-pointer text-center px-10 py-3 bg-gradient-to-b from-zinc-700 to-zinc-800 border border-zinc-600 shadow text-white rounded-full drop-shadow-md"
+          >
+            Wedding Gift
+          </a>
+        </div>
+
+        <div class="text-center text-white space-y-6">
+          <h6 class="text-xl">Qs. Ar-Rum: 21</h6>
+          <p class="text-base">
+            وَمِنْ ءَايَٰتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَٰجًا
+            لِّتَسْكُنُوٓا۟ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ
+            إِنَّ فِى ذَٰلِكَ لَءَايَٰتٍ لِّقَوْمٍ يَتَفَكَّرُونَ
+          </p>
+          <p class="text-base">
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+            dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+            kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
+            terdapat tanda-tanda bagi kaum yang berfikir."
+          </p>
+        </div>
+
+        <div class="text-center text-white space-y-4">
+          <h1 class="text-xl font-semibold">Terimakasih</h1>
+          <p class="text-base font-light isolate">
+            Demikian Kami sampaikan Undangan ini, mohon maaf apabila terdapat
+            kesalahan kata. Terimakasih atas segala doa dan harapannya.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-white text-center w-full">
+        12.04.2025 <span class="font-semibold">Resti & Reksa</span>.
+      </p>
+    </div>
+  </div>
+</Layout>
+<style>
+  /* body {
+    overflow: hidden;
+  } */
+
+  .cloud-1 {
+    position: absolute;
+    top: 0;
+    width: 260em;
+    height: 50%;
+    background: url("../assets/Clouds.png") 0 100% repeat-x;
+    -webkit-animation: cloudLoop 250s linear infinite;
+    animation: cloudLoop 250s linear infinite;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cloud-1 {
+      height: 40%;
+    }
+  }
+
+  .cloud-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260em;
+    height: 65%;
+    background: url("../assets/Clouds.png") 0 100% repeat-x;
+    -webkit-animation: cloudLoop-1 200s linear infinite;
+    animation: cloudLoop-1 200s linear infinite;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 0.3;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cloud-2 {
+      height: 50%;
+    }
+  }
+
+  .cloud-3 {
+    position: absolute;
+    top: 0;
+    width: 260em;
+    height: 80%;
+    background: url("../assets/Clouds.png") 0 100% repeat-x;
+    -webkit-animation: cloudLoop-2 150s linear infinite;
+    animation: cloudLoop-2 150s linear infinite;
+    z-index: 4;
+    pointer-events: none;
+    opacity: 0.2;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .cloud-3 {
+      height: 60%;
+    }
+  }
+
+  @-webkit-keyframes cloudLoop {
+    0% {
+      transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @keyframes cloudLoop {
+    0% {
+      transform: translate3d(0%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes cloudLoop-1 {
+    0% {
+      transform: translate3d(-10%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-40%, 0, 0);
+    }
+  }
+
+  @keyframes cloudLoop-1 {
+    0% {
+      transform: translate3d(-10%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-40%, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes cloudLoop-2 {
+    0% {
+      transform: translate3d(20%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-30%, 0, 0);
+    }
+  }
+
+  @keyframes cloudLoop-2 {
+    0% {
+      transform: translate3d(20%, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(-30%, 0, 0);
+    }
+  }
+</style>
