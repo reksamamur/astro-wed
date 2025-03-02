@@ -1,33 +1,40 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
 
 interface Props {
-    title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{title}</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Parisienne&family=Pinyon+Script&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body class="font-display">
-        <slot />
-    </body>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap'
+      rel='stylesheet'
+    />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Parisienne&family=Pinyon+Script&display=swap'
+      rel='stylesheet'
+    />
+
+    <meta property='og:title' content='Our Wedding Day!' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://reksaperson.my.id/' />
+    <meta property='og:description' content='April 12 2025' />
+    <meta property='og:image' content='https://i.ibb.co.com/YrJXNwW/og.png' />
+    <meta property='og:image:alt' content='April 12 2025 Our Wedding Day!' />
+  </head>
+  <body class='font-display'>
+    <slot />
+  </body>
 </html>
