@@ -8,8 +8,8 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  adapter: nodejs({
-    mode: "standalone",
-  }),
-  output: "server",
+  // adapter: nodejs({
+  //   mode: "standalone",
+  // }),
+  // output: "server",
 });
