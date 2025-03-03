@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import map from '../assets/map.jpg';
 import rings from '../assets/rings.png';
+
+import { Comments } from '../components/Comments';
 ---
 
 <Layout title={`Our Wedding Day!`}>
@@ -29,14 +31,14 @@ import rings from '../assets/rings.png';
           <h3 class='text-lg font-normal'>Dilaksanakan</h3>
           <h2 class='text-2xl font-semibold'>Sabtu, 12 April 2025</h2>
 
-          <div class='space-y-1'>
-            <p class='text-base font-normal'>Acara: 09:00 - 14:00</p>
+          <div class='space-y-1 my-10'>
+            <p class='text-xl font-normal'>Acara: 09:00 - 14:00</p>
           </div>
 
           <a
             href='https://calendar.app.google/4haEsVDWU5iHmRTA8'
             class='rounded-full cursor-pointer transition-all ease-in-out duration-300 hover:scale-125 text-black font-medium text-sm border-2 border-[#CBCBCB]/20 px-4 py-3 shadow-xl bg-gradient-to-b from-white to-[#EAEAEA]'
-            target="_blank"
+            target='_blank'
           >
             Simpan di Kalender
           </a>
@@ -81,7 +83,6 @@ import rings from '../assets/rings.png';
         <div>
           <a href='https://maps.app.goo.gl/s4NFsbRVH1bXY3Lv7' target='_blank'>
             <div
-              style={{ backgroundImage: `url(${map.src})` }}
               class='bg-blend-multiply relative w-full flex justify-center items-center cursor-pointer isolate hover:scale-105 transition-all duration-300 bg-[length:300%_250%] md:bg-[length:300%_400%] bg-[position:45%_45%] md:bg-[position:40%_59%] border-4 border-[#EAEAEA] rounded-3xl bg-clip-border shadow-xl h-64 bg-no-repeat'
             >
               <div
@@ -148,20 +149,7 @@ import rings from '../assets/rings.png';
           </p>
         </div>
 
-        <div>
-          <!--
-            The widget follows "system" settings for light/dark mode
-            by default, but you can manually select "light" or "dark"
-            mode for a consistent display
-          -->
-          <div
-            data-chirpy-theme='light'
-            data-chirpy-comment='true'
-            id='chirpy-comment'
-            class='p-4'
-          >
-          </div>
-        </div>
+        <Comments client:load />
       </div>
 
       <p class='text-white text-center w-full'>
