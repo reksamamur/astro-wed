@@ -85,7 +85,7 @@ import { WeddingGift } from '../components/WeddingGift';
           <a href='https://maps.app.goo.gl/s4NFsbRVH1bXY3Lv7' target='_blank'>
             <div
               style={{ backgroundImage: `url(${map.src})` }}
-              class='bg-blend-multiply relative w-full flex justify-center items-center cursor-pointer isolate hover:scale-105 transition-all duration-300 bg-center border-4 border-[#EAEAEA] rounded-3xl bg-clip-border shadow-xl h-64 bg-no-repeat'
+              class='bg-blend-multiply relative w-full flex justify-center items-center cursor-pointer isolate hover:scale-105 transition-all duration-300 bg-center border-4 border-[#EAEAEA] rounded-3xl bg-clip-border shadow-xl h-fit bg-no-repeat'
             >
               <div
                 class='rounded-2xl transition-all gap-10 duration-300 backdrop-blur-sm hover:backdrop-blur-none bg-gradient-to-r from-white to-white/80 flex flex-col h-full w-full px-6 py-12 md:px-8 md:py-10 justify-between group'
@@ -159,130 +159,131 @@ import { WeddingGift } from '../components/WeddingGift';
       </p>
     </div>
   </div>
-</Layout>
-<style>
-  /* body {
+
+  <style>
+    /* body {
     overflow: hidden;
   } */
 
-  .cloud-1 {
-    position: absolute;
-    top: 0;
-    width: 260em;
-    height: 50%;
-    background: url('../assets/Clouds.png') 0 100% repeat-x;
-    -webkit-animation: cloudLoop 250s linear infinite;
-    animation: cloudLoop 250s linear infinite;
-    z-index: 2;
-    pointer-events: none;
-    opacity: 0.8;
-    overflow: hidden;
-  }
-
-  @media only screen and (max-width: 768px) {
     .cloud-1 {
-      height: 40%;
-    }
-  }
-
-  .cloud-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 260em;
-    height: 65%;
-    background: url('../assets/Clouds.png') 0 100% repeat-x;
-    -webkit-animation: cloudLoop-1 200s linear infinite;
-    animation: cloudLoop-1 200s linear infinite;
-    z-index: 3;
-    pointer-events: none;
-    opacity: 0.3;
-    overflow: hidden;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .cloud-2 {
+      position: absolute;
+      top: 0;
+      width: 260em;
       height: 50%;
+      background: url('../assets/Clouds.png') 0 100% repeat-x;
+      -webkit-animation: cloudLoop 250s linear infinite;
+      animation: cloudLoop 250s linear infinite;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.8;
+      overflow: hidden;
     }
-  }
 
-  .cloud-3 {
-    position: absolute;
-    top: 0;
-    width: 260em;
-    height: 80%;
-    background: url('../assets/Clouds.png') 0 100% repeat-x;
-    -webkit-animation: cloudLoop-2 150s linear infinite;
-    animation: cloudLoop-2 150s linear infinite;
-    z-index: 4;
-    pointer-events: none;
-    opacity: 0.2;
-    overflow: hidden;
-  }
+    @media only screen and (max-width: 768px) {
+      .cloud-1 {
+        height: 40%;
+      }
+    }
 
-  @media only screen and (max-width: 768px) {
+    .cloud-2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 260em;
+      height: 65%;
+      background: url('../assets/Clouds.png') 0 100% repeat-x;
+      -webkit-animation: cloudLoop-1 200s linear infinite;
+      animation: cloudLoop-1 200s linear infinite;
+      z-index: 3;
+      pointer-events: none;
+      opacity: 0.3;
+      overflow: hidden;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .cloud-2 {
+        height: 50%;
+      }
+    }
+
     .cloud-3 {
-      height: 60%;
-    }
-  }
-
-  @-webkit-keyframes cloudLoop {
-    0% {
-      transform: translate3d(0%, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(-50%, 0, 0);
-    }
-  }
-
-  @keyframes cloudLoop {
-    0% {
-      transform: translate3d(0%, 0, 0);
+      position: absolute;
+      top: 0;
+      width: 260em;
+      height: 80%;
+      background: url('../assets/Clouds.png') 0 100% repeat-x;
+      -webkit-animation: cloudLoop-2 150s linear infinite;
+      animation: cloudLoop-2 150s linear infinite;
+      z-index: 4;
+      pointer-events: none;
+      opacity: 0.2;
+      overflow: hidden;
     }
 
-    100% {
-      transform: translate3d(-50%, 0, 0);
-    }
-  }
-
-  @-webkit-keyframes cloudLoop-1 {
-    0% {
-      transform: translate3d(-10%, 0, 0);
+    @media only screen and (max-width: 768px) {
+      .cloud-3 {
+        height: 60%;
+      }
     }
 
-    100% {
-      transform: translate3d(-40%, 0, 0);
-    }
-  }
+    @-webkit-keyframes cloudLoop {
+      0% {
+        transform: translate3d(0%, 0, 0);
+      }
 
-  @keyframes cloudLoop-1 {
-    0% {
-      transform: translate3d(-10%, 0, 0);
-    }
-
-    100% {
-      transform: translate3d(-40%, 0, 0);
-    }
-  }
-
-  @-webkit-keyframes cloudLoop-2 {
-    0% {
-      transform: translate3d(20%, 0, 0);
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
     }
 
-    100% {
-      transform: translate3d(-30%, 0, 0);
-    }
-  }
+    @keyframes cloudLoop {
+      0% {
+        transform: translate3d(0%, 0, 0);
+      }
 
-  @keyframes cloudLoop-2 {
-    0% {
-      transform: translate3d(20%, 0, 0);
+      100% {
+        transform: translate3d(-50%, 0, 0);
+      }
     }
 
-    100% {
-      transform: translate3d(-30%, 0, 0);
+    @-webkit-keyframes cloudLoop-1 {
+      0% {
+        transform: translate3d(-10%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-40%, 0, 0);
+      }
     }
-  }
-</style>
+
+    @keyframes cloudLoop-1 {
+      0% {
+        transform: translate3d(-10%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-40%, 0, 0);
+      }
+    }
+
+    @-webkit-keyframes cloudLoop-2 {
+      0% {
+        transform: translate3d(20%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-30%, 0, 0);
+      }
+    }
+
+    @keyframes cloudLoop-2 {
+      0% {
+        transform: translate3d(20%, 0, 0);
+      }
+
+      100% {
+        transform: translate3d(-30%, 0, 0);
+      }
+    }
+  </style>
+</Layout>
