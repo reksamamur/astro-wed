@@ -18,7 +18,7 @@ export const WeddingGift = () => {
   }
 
   return (
-    <div className='px-4 py-3 rounded-lg w-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center auto-cols-fr'>
+    <div className='px-4 py-3 rounded-lg w-full grid gap-4 grid-cols-1 lg:grid-cols-2 justify-center items-center auto-cols-fr'>
       <div
         onClick={() => oncopyaccount('bca')}
         className='relative group transition-all gap-6 text-black delay-150 cursor-pointer flex h-fit md:h-72 justify-between rounded-3xl border-4 border-white bg-gradient-to-t from-white/60 to-gray-200 px-5 pt-8 pb-5 shadow-lg drop-shadow-xl flex-col'
