@@ -46,29 +46,6 @@ export const WeddingGift = () => {
       </div>
 
       <div
-        onClick={() => oncopyaccount('gopay')}
-        className='relative group transition-all gap-6 text-black delay-150 cursor-pointer flex h-fit md:h-72 justify-between rounded-3xl border-4 border-white bg-gradient-to-t from-white/60 to-gray-200 px-5 pt-8 pb-5 shadow-lg drop-shadow-xl flex-col'
-      >
-        <div className='flex flex-1 items-center justify-center'>
-          <img src={Gopay.src} className='h-20 w-16' />
-        </div>
-
-        <div className='flex flex-col gap-3 justify-center items-center'>
-          <h6 className='font-semibold'>Reksa Ma'mur</h6>
-          <div className='transition-all delay-150 inline-flex items-center justify-between w-full rounded-full border border-zinc-200 bg-gradient-to-b from-white to-zinc-50 px-4 py-1 group-hover:font-extrabold group-hover:scale-125'>
-            <p className='flex-1'>081284232758</p>
-            <button>
-              <img
-                src='https://www.svgrepo.com/show/82319/clipboard-outline.svg'
-                className='h-4 w-4'
-                alt=''
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div
         onClick={() => oncopyaccount('duidnow')}
         className='relative group transition-all gap-6 text-black delay-150 cursor-pointer flex h-fit md:h-72 justify-between rounded-3xl border-4 border-white bg-gradient-to-t from-white/60 to-gray-200 px-5 pt-8 pb-5 shadow-lg drop-shadow-xl flex-col'
       >
