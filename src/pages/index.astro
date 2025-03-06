@@ -2,13 +2,38 @@
 import Layout from '../layouts/Layout.astro';
 import map from '../assets/bg.jpg';
 import rings from '../assets/rings.png';
+import overlay from '../assets/overlay.png';
+import stamp from '../assets/stamp.png';
+
+import journey from '../assets/journey.mp3';
 
 import { Comments } from '../components/Comments';
 import { WeddingGift } from '../components/WeddingGift';
 ---
 
 <Layout title={`Our Wedding Day!`}>
-  <div class='relative min-h-screen w-full'>
+  <div id='parent' class='relative min-h-screen w-full'>
+    <div
+      id='overlay'
+      class='absolute z-[60] transition-all duration-700 opacity-100 w-full h-screen flex justify-center items-center bg-center bg-no-repeat'
+      style={{
+        backgroundImage: `url(${overlay.src})`,
+        backgroundSize: '100% 100%',
+      }}
+    >
+      <img src={stamp.src} class='absolute -top-10 -right-10 h-60 xl:h-fit' />
+      <div class='flex flex-col gap-20 items-center justify-center'>
+        <div class='flex flex-col gap-4 items-center justify-center'>
+          <p class='text-base'>Wedding Invitation!</p>
+          <h1 class='text-8xl font-parisienne font-bold'>R&R</h1>
+        </div>
+
+        <div class='relative flex justify-center items-center'>
+          <button>Ketuk untuk membuka!</button>
+        </div>
+      </div>
+    </div>
+
     <div
       class='absolute inset-0 z-0 bg-gradient-to-b from-[#548CB3] to-[#8DC8E7]'
     >
@@ -160,6 +185,10 @@ import { WeddingGift } from '../components/WeddingGift';
     </div>
   </div>
 
+  <audio id='bg-music' loop>
+    <source src={journey} type='audio/mpeg' />
+  </audio>
+
   <style>
     /* body {
     overflow: hidden;
@@ -287,3 +316,16 @@ import { WeddingGift } from '../components/WeddingGift';
     }
   </style>
 </Layout>
+<script>
+  const layout = document.getElementById('layout-body');
+  const overlay = document.getElementById('overlay');
+  const audio = document.getElementById('bg-music');
+
+  overlay?.addEventListener('click', () => {
+    layout?.classList.remove('overflow-hidden');
+    overlay.classList.remove('opacity-100');
+    overlay.classList.add('opacity-0');
+
+    audio?.play();
+  });
+</script>

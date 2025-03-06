@@ -46,7 +46,15 @@ const { title } = Astro.props;
     <meta property='twitter:description' content='April 12 2025' />
     <meta property='twitter:image' content='/OG_Image.png' />
   </head>
-  <body class='font-display'>
+  <body class='font-display overflow-hidden' id='layout-body'>
     <slot />
+    <script>
+      window.addEventListener('beforeunload', function () {
+        window.scrollTo(0, 0);
+      });
+      document.addEventListener('DOMContentLoaded', function () {
+        window.scrollTo(0, 0);
+      });
+    </script>
   </body>
 </html>
