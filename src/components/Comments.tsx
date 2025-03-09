@@ -102,7 +102,7 @@ export const Comments = () => {
         <div className='w-full space-y-2'>
           <div className='text-end'>
             <label htmlFor='name' className='text-4xl font-parisienne'>
-              Dear,
+              Dari,
             </label>
             <input
               type='text'
