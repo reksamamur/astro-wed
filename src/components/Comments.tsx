@@ -143,7 +143,7 @@ export const Comments = () => {
 
       {/* List Comments */}
       <Suspense fallback={<p>Sebentarr...</p>}>
-        {comments.length > 1 ? (
+        {comments.length > 0 ? (
           <section className='w-full flex flex-col overflow-auto h-[500px] gap-4'>
             {comments.map((item) => (
               <div
